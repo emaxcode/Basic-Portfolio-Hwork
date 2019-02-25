@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+body {
+   font-family: 'Georgia', 'Times New Roman', Times, serif; 
+     font-size: 16px;
+    background: gray;
+   }
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+    }
+
+.container::after{
+    content: '';
+    display: table;
+    clear: both;
+   font-family: Arial, Helvetica, sans-serif;
+   
+      }
+
+
+header {
+    background: white;
+    border-bottom: 2px solid lightgray;
+    height: 90px;
+}
+
+.logo {
+    width: 27%;
+   float: left;
+   height: 20px;
+}
+
+.logo h2 {
+  color: white;
+  background:#4aaaa8;
+  text-align: center;
+  display: inline-block; 
+     font-size: 30px;
+     padding: 28px 35px;
+}
+
+
+nav {
+    width: 80%;
+    float: left;
+    
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+   
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;    
+}
+
+nav ul li::after {
+    content: "|";
+    padding: 20px 30px;
+    color: #4aaaa8;
+    
+}
+
+nav ul li:last-child::after {
+    content: "";
+    padding:  5px;
+}
+
+
+/*  this is the nav words */
+nav ul li a {
+    text-decoration: none;
+    color:#4aaaa8;
+   display: inline-block;
+   padding: 15px 5px;
+   font-size: 20px;
+         }
+
+nav ul li a:hover {
+        color: #52ADA8;
+    }
+
+.notes{
+        color: teal;
+        text-align: center;
+        float: left;}
+
+h3 {
+        color: teal;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        font: 20px;
+    }
+
+section {
+background:lightgray;
+
+
+}
+
+section .container::after {
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+section .page-content {
+    background-color: white;
+    font-size: 19px;
+    padding-top: 20px;
+   padding-left: 2em;
+   padding-right: 2em;
+   padding-bottom: 3em;
+}
+
+.float-img {
+    max-width: 120px;
+    max-height: 230px;
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 15px 15px;
+    
+ }
+
+
+footer {
+    background: gray;
+    color:white;
+    border-top: 5px solid #52ADA8;
+    padding: 20px 20px;
+
+}
+details {
+    display:block;
+    font-size: 20px;
+    color:black;
+    border: 1px solid black;
+    padding: 10px 10px;
+    background:#fee372;
+    margin-left: 32%;
+    margin-right: 32%;}
+    
+summary {
+    text-align: center;
+    font-size: 20px;
+
+}
+
